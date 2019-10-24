@@ -1,0 +1,1 @@
+web: gunicorn djangoawards.wsgi --log-file -
