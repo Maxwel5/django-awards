@@ -6,4 +6,5 @@ from . import views
 urlpatterns = [
     # path('', HomePageView.as_view(), name='home'), 
     path('', views.homePageView, name='home'),
+    path('post/', views.createPostView, name='add_post')
 ]
