@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'awwwards.apps.AwwwardsConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -159,3 +160,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+
+LOGIN_REDIRECT_URL = '/'
+# LOGIN_URL = 'login'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
